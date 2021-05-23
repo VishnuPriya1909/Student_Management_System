@@ -1,0 +1,52 @@
+<html>
+   <head>
+      <title>Marksheet</title>
+      <link rel=stylesheet href="../public/css/mark_sheet.css">
+   </head>
+    <body>
+              <h1>Marksheet</h1> 
+       <button onclick="document.getElementById('id01').style.display='block'">Click here to view Mark</button>
+       <div class="modal" id="id01">
+             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+      <table class="modal_content">
+        <tr>
+           <th>SI NO</th>
+           <th>Name</th>
+           <th>Roll No</th>
+           <th>Date</th>
+           <th>Gender</th>
+           <th>Email</th>
+           <th>Test 1</th>
+           <th>Test 2</th>
+           <th>Test 3</th>
+           <th>Average Score</th>
+        </tr>
+        <% if(userdata.length!=0){ %>
+      <%var i=1;%>
+      <%userdata.forEach(function(data){ %>
+         <tr>
+            <td><%=i; %></td>
+            <td><%=data.User_Name %></td>
+            <td><%=data.rollno %></td>
+            <% var datemonth=data.Date_of_Examination.getMonth()+1 %>
+            <td><%=data.Date_of_Examination.getDate()+"/"+datemonth +"/"+data.Date_of_Examination.getFullYear() %></td>
+            <td><%=data.Gender %></td>       
+            <td><%=data.user_email %></td>
+         <td><%=data.Test_1 %></td>
+         <td><%=data.Test_2 %></td>
+         <td><%=data.Test_3 %></td>
+         <td><%=Math.round((data.Test_1+data.Test_2+data.Test_3)/3)%></td>
+         </tr>
+     <% i++; }) %>
+     <% } else { %>
+        <tr>
+           <td colspan="9">No Data Found</td>
+        </tr> 
+      <% } %>
+      </table>
+      </div>
+      </div>
+      <script src="../public/js/mark_sheet.js">
+      </script>
+    </body>
+</html>

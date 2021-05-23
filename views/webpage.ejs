@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>School Login</title>
+     <link rel=stylesheet href="../public/css/webpage.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+    <body>
+        <div class=background>
+            <div class="square">
+                <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+               </ul>
+            </div>
+            <div class="circle">
+                <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                </ul>
+            </div>
+            <div class="container" id="container">
+              <div class="form-container sign-in-container">
+                <form name=form2 action="/validate" method="post" onsubmit="return finalvalidate()">
+                  <h1>Student Login</h1>
+                  <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <span>or use your account</span>
+                  <input type="email" placeholder="Email" id="email1" name="Email" onkeyup="validation1()" />
+                  <i class="fa fa-envelope" aria-hidden="true" id="envelope2"></i><br>
+                  <small id=error name=Error1></small>
+                  <input type="password" placeholder="Password" id="logpass" name="Password" onkeyup="validation2()"/>
+                  <i class="fa fa-eye-slash" aria-hidden="true" id="hide2" onclick="showpassword()"></i> 
+                  <i class="fa fa-eye" aria-hidden="true" id="show2" onclick="showpassword()"></i>
+                  <small id=error1 name="Error"></small>
+                  <a href="#"><big>Forgot your password?</big></a>
+                  <p id=last><%=er%></p>
+                  <button>Submit</button>
+                </form>
+              </div>
+              <div class="overlay-container">
+                <div class="overlay">
+                  <div class="overlay-panel overlay-right">
+                    <h1>New here!</h1>
+                    <p>Sign up and get details and start our journey</p>
+                 <a href="/signup"><button class="color" id="signUp">Sign Up</button></a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script src="../public/js/webpage.js"></script>
+            </body>
+</html>

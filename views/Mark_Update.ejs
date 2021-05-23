@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkSheet update...</title>
+    <link href="../public/css/Mark_Update.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div  class="wrapper">
+        <h2>Mark Entry</h2>
+        <form method="POST" action="/mark">
+            <h4>Student Details</h4>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" 
+                    placeholder="Name" required class="name" name="Name">
+                    <i class="fa fa-user icon" aria-hidden="true"></i>
+                </div>
+                 <div class="input-box">
+                        <input type="text" placeholder="Roll No" name="Email" required class="name">
+                        <i class="fa fa-id-badge icon" aria-hidden="true"></i>
+                    </div>
+            </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="email" placeholder="EmailAddress" required class="name" name="Email">
+                        <i class="fa fa-envelope icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <h4>Date of Exam</h4>
+                        <input type="text" placeholder="DD" required class="dob">
+                        <input type="text" placeholder="MM" required class="dob">
+                        <input type="text" placeholder="YYYY" required class="dob">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Department" required class="dep" name="Dep">
+                        
+                    </div>
+                </div>
+                  
+                <div class="input-group">
+                    <div class="input-box">
+                        <h4>Mark Details</h4>
+                    </div>
+                    <div class="input-box">
+                     <input type="text" placeholder="Mark 1" class="name" name="mark1">
+                     <i class="fa fa-graduation-cap icon" aria-hidden="true"></i>
+                    </div>
+                   
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" placeholder="Mark 2" class="name" name="mark2">
+                        <i class="fa fa-graduation-cap icon" aria-hidden="true"></i> 
+                    </div>
+                       <div class="input-box">
+                        <input type="text" placeholder="Mark 3" class="name" name="mark3">
+                        <i class="fa fa-graduation-cap icon" aria-hidden="true"></i>   
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <button type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+        </form>
+    </div>
+</body>
+</html>

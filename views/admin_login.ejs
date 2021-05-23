@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Login</title>
+        <link rel="Stylesheet" href="../public/css/admin_login.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body >
+                    <img class="wave" src="../public/images/wave.png">
+                    <div class="container">
+                        <div class="img">
+                            <img src="../public/images/login form.svg">
+                        </div>
+                        <div class="login-content">
+                            <form action="/authenticate" method="post" onsubmit="return finalvalidate()" name="admin">
+                                <!-- <img src="../public/images/avatar.svg"> -->
+                                <h2 class="title">Welcome Admin!!!</h2>
+                                   <div class="input-div one">
+                                      <div class="i">
+                                              <i class="fas fa-user"></i>
+                                      </div>
+                                      <div class="div">
+                                              <h5 id="user">Username</h5>
+                                              <input type="text" class="input" name="Email" id="email">
+                                      </div>
+                                   </div>
+                                   <div class="input-div pass">
+                                      <div class="i"> 
+                                           <i class="fas fa-lock"></i>
+                                      </div>
+                                      <div class="div">
+                                           <h5 id="pass"> Password</h5>
+                                           <input type="password" class="input" name="Password" id="password" >
+                                   </div>
+                                </div>
+                                <a href="#">Forgot Password?</a>
+                                <input type="submit" class="btn" value="Login">
+                            </form>
+                        </div>
+                    
+                    </div>
+         <script src="../public/js/admin_login.js">    
+         </script>
+    </body>
+</html>

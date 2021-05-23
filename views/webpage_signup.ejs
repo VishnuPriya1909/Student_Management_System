@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Signup</title>
+        <link rel=stylesheet href="../public/css/webpage_signup.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+    <body>
+    <div class=background>
+            <div class="square">
+                <ul>
+                <li></li>
+                <li></li>
+                <li></li>    
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+               </ul>
+            </div>
+            <div class="circle">
+                <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                </ul>
+            </div>
+            <div class="container" id="container">
+<div class="form-container sign-up-container">
+    <form name="form1" action="/signupValidate" method="POST" onsubmit="return finalsignup()">
+      <h1>REGISTER</h1>
+      <input type="text" placeholder="Name" name="Name1" id="name" onkeyup="namecheck()"/>
+      <i class="fa fa-user-circle" aria-hidden="true" id="user-circle"></i><br>
+      <small id=demo></small>
+      <input type="text" placeholder="Roll Number" name="Roll_No1" id="roll" onkeyup="rollcheck()">
+      <i class="fa fa-id-card" aria-hidden="true" id="id-card"></i><br>
+      <small id=demo1></small> 
+      <input type="email" placeholder="Email" id="email" name="Email1" onkeyup="emailcheck()"/>
+      <i class="fa fa-envelope" aria-hidden="true" id="envelope"></i><br>
+       <small id=demo2></small>
+      <input type="password" placeholder="Password" id="pas1" name="Password1" onkeydown="passcheck()" />
+        <i class="fa fa-eye-slash" aria-hidden="true" id="hide"  onclick="myfunction()"></i> 
+      <i class="fa fa-eye" aria-hidden="true" id="show" onclick="myfunction()"></i><br>
+      <small id=demo3></small>
+      <input type="password" placeholder="Confirm Password" id="pas2" name="Password2" onkeyup="passcheck2()"/>
+       <i class="fa fa-eye-slash" aria-hidden="true" id="hide1"  onclick="myfunction1()"></i>
+      <i class="fa fa-eye" aria-hidden="true" id="show1"  onclick="myfunction1()"></i><br>
+      <small id=demo4></small>
+      <p id="gen" required>Gender:
+        <input type="radio" value="Male" name="gender">Male
+        <input type="radio" value=Female name="gender">Female
+        <input type="radio" value=others name="gender">Others</p>
+        <input type="date" value="birth" name="Birth" id="date" required onclick="datafunction()">Date Of Birth
+      <button value="submit">Register</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Welcome Back!</h1>
+        <p>To keep connected with us enter your personal details.</p>
+      <a href="/student"><button class="color" id="signIn">Sign In</button></a>
+        </div>
+  </div>
+  <script src="../public/js/webpage_signup.js"></script>
+  </body>
+  </html>

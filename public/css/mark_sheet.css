@@ -1,0 +1,92 @@
+.modal
+{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+button
+{
+    background:cyan;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    font-weight: bold;
+    border: none;
+    opacity: 0.9;
+    margin-left: 43%;
+    margin-top: 6%;
+}
+button:focus
+{
+    outline: 2px solid rgb(11, 75, 80);
+}
+button:hover
+{
+    background-color: wheat;
+} 
+.modal_content
+{
+    background-color: rosybrown;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close
+{
+    color:rgb(253, 246, 246);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+   position: absolute;
+   top: 58px;
+   left: 120px;
+}
+.close:hover,.close:focus{
+    color:darkturquoise;
+    text-decoration: none;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    color:#105003;
+    margin-top: 50px;
+    font-family:cursive;
+ }
+ body
+ {
+    background:linear-gradient(270deg,rgb(31, 187, 31), rgb(15, 195, 250) ,rgb(91, 13, 146)); 
+ }
+ table{
+     margin-left:4%;
+     margin-top: 1%;
+     border-collapse: collapse;
+     border: 2px solid rgb(85, 4, 85);
+ }
+ td,th{
+     padding: 10px;
+ }
+ th{
+     padding-top: 16px;
+     padding-bottom: 12px;
+     text-align: center;
+     background-color: #105003;
+     color: blanchedalmond;
+     font-weight:normal;
+     font-size: medium;
+ }
+ td{
+     color: rgb(1, 19, 18);
+     font-weight:bold;
+     text-align: center;
+     background-color: rgb(143, 109, 156);
+ }
+ 

@@ -1,0 +1,16 @@
+body{
+            
+    margin-left: 10cm;
+    margin-top: 5cm;
+}
+button{
+  border:none;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(75, 167, 243);
+}
+a{
+   text-decoration: none; 
+   color: white;
+    font-weight: bold;
+}
